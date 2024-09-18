@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <!-- Daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">To Do list ✋📚</h1>
+    </header>
+    <main>
+      <form
+        action="#"
+        class="container mx-auto flex justify-center items-center gap-1 my-5"
+      >
+        <input
+          type="text"
+          placeholder="Type here"
+          class="input input-bordered input-success w-full max-w-xs"
+          id="user-input"
+        />
+        <button class="btn btn-success text-white" id="add-btn">
+          Add Item
+        </button>
+      </form>
+      <div>
+        <div class="max-w-xl mx-auto">
+          <table class="table">
+            <!-- head -->
+            <thead>
+              <tr>
+                <th>Number</th>
+                <th>Description</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <!-- row 1 -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
